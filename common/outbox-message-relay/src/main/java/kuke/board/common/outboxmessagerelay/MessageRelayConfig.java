@@ -16,7 +16,6 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
 
 @EnableAsync
 @Configuration
