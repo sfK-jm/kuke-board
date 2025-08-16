@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ArticleReadController {
     private final ArticleReadService articleReadService;
 
-    @GetMapping("/v1/article/{articleId}")
+    @GetMapping("/v1/articles/{articleId}")
     public ArticleReadResponse readResponse(@PathVariable("articleId") Long articleId) {
         return articleReadService.read(articleId);
     }
