@@ -23,3 +23,14 @@ endpoints:
     url: http://127.0.0.1:9002
   kuke-board-view-service:
     url: http://127.0.0.1:9003
+
+### Swagger ###
+springdoc:
+  packages-to-scan: kuke.board.articleread.controller # 컨트롤러 가져오기
+  default-consumes-media-type: application/json;charset=UTF-8
+  default-produces-media-type: application/json;charset=UTF-8
+  swagger-ui:
+    path: /
+    disable-swagger-default-url: true
+    display-request-duration: true
+    operations-sorter: alpha
